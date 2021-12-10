@@ -10,7 +10,7 @@
   </head>
   <body>
     <?php
-        $conn = new mysqli("localhost", "root", "", "ajax_form");
+        $conn = new mysqli("remotemysql.com", "z5m5hgq7cD", "LwpEGJ2mWx", "z5m5hgq7cD");
         $sql = "SELECT * FROM `form_data` ORDER BY id DESC ";
         $result = $conn->query($sql);
     ?>
@@ -69,6 +69,7 @@
                     success:(data)=>{
                         $txt = '<tr><td>'+data.ID+'</td><td>'+data.username+'</td><td>'+data.password+'</td><td>'+data.email+'</td></tr>';
                         $("tbody").prepend($txt);
+                        alert("Success");
                     }
                 });
             });
