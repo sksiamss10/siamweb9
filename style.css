@@ -1,6 +1,4 @@
-body{
-  padding: 50px 80px;
-}
+
 body,
 html {
   background-color: #ebecf0;
@@ -50,7 +48,6 @@ label {
   margin-bottom: 24px;
   width: 100%;
 }
-
 input {
   margin-right: 8px;
   -webkit-box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
